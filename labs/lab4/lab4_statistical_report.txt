@@ -1,0 +1,49 @@
+Lab 4 Statistical Report
+========================================
+
+Concrete Strength Descriptive Statistics
+----------------------------------------
+count        100.000000
+mean          35.060000
+median        34.200000
+mode          31.800000
+min           21.800000
+max           47.100000
+range         25.300000
+variance      37.978788
+std_dev        6.162693
+q1            31.100000
+q2_median     34.200000
+q3            39.125000
+iqr            8.025000
+skewness       0.047308
+kurtosis      -0.674736
+dtype: float64
+
+Material Property Statistics (by material_type)
+----------------------------------------
+               count     mean        std    min    max
+material_type                                         
+Aluminum          50  196.632   7.633290  186.2  212.4
+Composite         50  299.042  10.384449  281.5  319.2
+Concrete          50   36.258   2.218668   32.3   40.1
+Steel             50  399.098  10.398420  381.6  419.2
+
+Probability Scenarios
+----------------------------------------
+binomial_exact_3: {'pmf': np.float64(0.1395756779308954), 'cdf_leq_k': np.float64(0.2578386591160163)}
+binomial_leq_5: {'cdf_leq_5': np.float64(0.6159991279561414)}
+poisson_exact_8: {'pmf': np.float64(0.11259903214902009), 'cdf_leq_k': np.float64(0.3328196787507191)}
+poisson_gt_15: {'p_gt_15': np.float64(0.04874040330397866)}
+normal_gt_280: {'p_gt_280': np.float64(0.02275013194817921)}
+normal_95th_percentile: {'x_95': np.float64(274.6728044042721)}
+exp_fail_before_500: {'cdf_leq_x': np.float64(0.3934693402873666), 'survival_gt_x': np.float64(0.6065306597126334)}
+exp_survive_beyond_1500: {'survival_gt_1500': np.float64(0.2231301601484298)}
+
+Bayes' Theorem – Structural Damage Detection
+----------------------------------------
+prior_damage: 0.05
+posterior_damage_given_positive: 0.3333333333333334
+p_positive: 0.14249999999999996
+false_positive_rate: 0.09999999999999998
+
